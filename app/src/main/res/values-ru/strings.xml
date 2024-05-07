@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RandomText</string>
+    <string name="main_text">Нажми</string>
+
+    <string name="text_0000">Приготовить ужин</string>
+    <string name="text_0001">Играть в видео игры</string>
+    <string name="text_0002">Программировать</string>
+    <string name="text_0003">Посмотреть видео на youtube</string>
+    <string name="text_0004">Посмотреть фильм</string>
+    <string name="text_0005">Почитать книгу</string>
+
+</resources>

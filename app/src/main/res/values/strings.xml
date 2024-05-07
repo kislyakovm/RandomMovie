@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RandomText</string>
+    <string name="main_text">Click me</string>
+
+    <string name="text_0000">Cook a meal</string>
+    <string name="text_0001">Play video games</string>
+    <string name="text_0002">Coding</string>
+    <string name="text_0003">Watch youtube</string>
+    <string name="text_0004">Watch film</string>
+    <string name="text_0005">Read a book</string>
+
+</resources>
