@@ -2,11 +2,17 @@
     <string name="app_name">RandomText</string>
     <string name="main_text">Нажми</string>
 
-    <string name="text_0000">Приготовить ужин</string>
-    <string name="text_0001">Играть в видео игры</string>
-    <string name="text_0002">Программировать</string>
-    <string name="text_0003">Посмотреть видео на youtube</string>
-    <string name="text_0004">Посмотреть фильм</string>
-    <string name="text_0005">Почитать книгу</string>
+    <string name="text_0000">Сёгун</string>
+    <string name="text_0001">Fallout</string>
+    <string name="text_0002">Мир Дикого Запада</string>
+    <string name="text_0003">Офис</string>
+    <string name="text_0004">Джентльмены</string>
+    <string name="text_0005">Маньяк</string>
 
+    <string name="film_0000">shogun_ru</string>
+    <string name="film_0001">fallout_ru</string>
+    <string name="film_0002">westworld_ru</string>
+    <string name="film_0003">office_ru</string>
+    <string name="film_0004">gentlemen_ru</string>
+    <string name="film_0005">maniac_ru</string>
 </resources>

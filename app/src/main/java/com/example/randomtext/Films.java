@@ -8,4 +8,12 @@ public class Films {
         this.imgUrl = imgUrl;
         this.name = name;
     }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

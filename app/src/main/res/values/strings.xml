@@ -2,11 +2,17 @@
     <string name="app_name">RandomText</string>
     <string name="main_text">Click me</string>
 
-    <string name="text_0000">Cook a meal</string>
-    <string name="text_0001">Play video games</string>
-    <string name="text_0002">Coding</string>
-    <string name="text_0003">Watch youtube</string>
-    <string name="text_0004">Watch film</string>
-    <string name="text_0005">Read a book</string>
+    <string name="text_0000">Shogun</string>
+    <string name="text_0001">Fallout</string>
+    <string name="text_0002">Westworld</string>
+    <string name="text_0003">The Office</string>
+    <string name="text_0004">The Gentlemen</string>
+    <string name="text_0005">Maniac</string>
 
+    <string name="film_0000">shogun_en</string>
+    <string name="film_0001">fallout_en</string>
+    <string name="film_0002">westworld_en</string>
+    <string name="film_0003">office_ru</string>
+    <string name="film_0004">gentlemen_en</string>
+    <string name="film_0005">maniac_en</string>
 </resources>

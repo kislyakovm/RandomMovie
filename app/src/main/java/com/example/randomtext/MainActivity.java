@@ -3,6 +3,7 @@ package com.example.randomtext;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -11,12 +12,16 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     TextView mainText;
-    ArrayList arrayList;
+    ImageView imageView;
+    ArrayList<Films> arrayList;
+    ArrayList<String> pictures;
     Random random;
     MediaPlayer mediaPlayer;
 
@@ -32,27 +37,36 @@ public class MainActivity extends AppCompatActivity {
         });
 
         mainText = findViewById(R.id.mainText);
+        imageView = findViewById(R.id.imageView);
+
         random = new Random();
         mediaPlayer = MediaPlayer.create(this, R.raw.jump);
 
         arrayList = new ArrayList();
+        pictures = new ArrayList<>();
         addTextToArray();
 
-        mainText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mediaPlayer.start();
-                mainText.setText("" + arrayList.get(random.nextInt(arrayList.size())));
-            }
-        });
     }
 
     private void addTextToArray() {
-        arrayList.add(getString(R.string.text_0000));
-        arrayList.add(getString(R.string.text_0001));
-        arrayList.add(getString(R.string.text_0002));
-        arrayList.add(getString(R.string.text_0003));
-        arrayList.add(getString(R.string.text_0004));
-        arrayList.add(getString(R.string.text_0005));
+        for (int i = 0; i <= 5; i++) {
+            String filmId = "film_" + String.format("%04d", i);
+            String textId = "text_" + String.format("%04d", i);
+            int filmResId = getResources().getIdentifier(filmId, "string", getPackageName());
+            int textResId = getResources().getIdentifier(textId, "string", getPackageName());
+            arrayList.add(new Films(getString(filmResId), getString(textResId)));
+        }
+    }
+
+    public void onClickButton(View view) {
+        mediaPlayer.start();
+        int i = random.nextInt(arrayList.size());
+
+        String title = arrayList.get(i).getName();
+        String imageUrl = arrayList.get(i).getImgUrl();
+        int imageID = getResources().getIdentifier(imageUrl, "drawable", getPackageName());
+        imageView.setImageResource(imageID);
+
+        mainText.setText("" + title);
     }
 }
